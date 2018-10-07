@@ -93,6 +93,10 @@
         })
     }
 
+    window.addEventListener("scroll", () => {
+        addMenuBackground();
+    })
+
     window.addEventListener("resize", () => {
         reorderResponsiveMenu();
     })
