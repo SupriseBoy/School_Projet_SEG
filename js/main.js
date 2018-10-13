@@ -1,5 +1,5 @@
 (() => {
-
+    /* Coded by Justin Leach, 30091487 */
     const mobileWidth = 680;
 
     const addMenuBackground = () => {
@@ -106,3 +106,4 @@
     onNavItemClick();
     onTeamChange(); /* Section onTeamChange*/
 })();
+/* End of code by Justin Leach, 30091487 */
