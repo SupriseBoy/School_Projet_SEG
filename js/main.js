@@ -106,4 +106,27 @@
     onNavItemClick();
     onTeamChange(); /* Section onTeamChange*/
 })();
+
+function search() {
+    var p;
+    const title = document.getElementById("search").value;
+    const title_filter = title.toUpperCase();
+    const ul = document.getElementById("list-subject");
+    const li = ul.getElementsByTagName("li");
+    const search_empty = document.getElementById("search_empty");
+    var compteur = 0;
+    for (i = 0; i < li.length; i++) {
+        p = li[i].getElementsByTagName("h2")[0];
+        if (p.innerHTML.toUpperCase().indexOf(title_filter) > -1) {
+            li[i].style.display = "";
+            search_empty.style.display = "none";
+        } else {
+            li[i].style.display = "none";
+            compteur++;
+            if(compteur == li.length){
+                search_empty.style.display = "";
+            }    
+        }
+    }
+}
 /* End of code by Justin Leach, 30091487 */

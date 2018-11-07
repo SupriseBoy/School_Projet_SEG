@@ -11,6 +11,9 @@ body{
 a {
     text-decoration: none;
 }
+p {
+    font-weight: bold;
+}
 
 h1 {
      color: #fff;
@@ -21,16 +24,18 @@ h1 {
 h3 {
     width: 100%;
     margin-top: 0;
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
 }
-
-h3::first-letter{
-    color: rgb(0, 17, 255);
+h4 {
+    font-size: 22px;
 }
 
 h1, h2, h3, h4 ,h5 ,h6 {
     font-weight: normal;
+}
+p {
+    text-align: justify;
 }
 
 /* Header */
@@ -140,13 +145,21 @@ header nav .aw-nav-toggle {
     font-size: 26px;
 }
 
+/* Sections */
+
+.aw-section {
+    width: 100%;
+    height: 100%;
+    padding: 35px 0;
+}
+
 .aw-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
 
@@ -154,44 +167,281 @@ header nav .aw-nav-toggle {
     align-items: center;
 }
 
-/* Sections */
-
-.aw-section {
-    padding: 150px 0;
+/* About us */
+.aw-grid-about {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
 }
 
-/* About us */
-#aw-about .aw-colum {
-    width: 48%;
+.aw-section-title {
+    margin: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    background: #2f2f2f;
+    border-left: 7px solid #8f001a;
+}
+
+#aw-about .aw-grid-about .aw-box {
+    margin: 15px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.5;
+}
+.aw-grid-about .aw-box .aw-icon {
+    margin: 15px;
+}
+.aw-grid-about .aw-box .aw-icon i {
+    font-size: 80px;
+    color: #2f2f2f;
+}
+
+.aw-parallax {
+    background-image: url("../img/parrallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 550px;
+}
+
+/* Subject us */
+.aw-subject {
+    /* background: linear-gradient(180deg, #000, #fff); */
+}
+
+.aw-grid-subject {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    max-height: 650px;
+    min-height: 650px;
+}
+.aw-grid-subject ul {
+    position: relative;
+    list-style-type: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.aw-grid-subject .aw-colum {
+    display: flex;
+    flex-direction: row;
     margin-top: 25px;
-    margin-top:center;
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.aw-subject-info-title {
+    padding: 15px;
+    font-size: 18px;
+    min-width: 125px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px 0 0 8px;
+}
+
+.aw-subject-info {
+    padding: 5px;
+}
+#search_empty {
     text-align: center;
 }
 
-#aw-about i {
-    font-size: 45px;
-    color: #dca453;
+.aw-btn-info {
+    text-align: right;
 }
 
-span.aw-backdrop-close {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 20px;
-    right: 20px;
-    height: 30px;
-    width: 30px;
+#aw-subject input[type="button"] {
+    border: none;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 30px;
     color: #fff;
+    background-color: #2f2f2f;
     font-size: 16px;
-    border: solid 1px #fff;
-    border-radius: 100%;
+    box-shadow: inset 0 -3.7px 0 0 #8f001a;
+    text-transform: uppercase;
     cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#aw-subject input[type="button"]:hover {
+    color: #fff;
+    background-color: rgb(0, 0, 0, .35);
+    box-shadow: inset 0 -3.7px 0 0 #b61230;
+}
+
+/* button search */
+.aw-button {
+    position: relative;
+  }
+
+.aw-button input{
+    width: 100%;
+    border: 2px solid rgb(41, 40, 40);
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.8s;
+  }
+  
+  .aw-button input:focus {
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 45px 0 rgb(255, 255, 255);
+  }
+  
+  .aw-button input {
+    padding-left: 40px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .aw-button i {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+  
+  .aw-button.aw-box-icon i {
+    background-color: #000;
+    color: #fff;
+    padding: 9px 45px;
+    border-radius: 4px;
+  }
+  
+  .aw-button.aw-box-icon input:focus + i {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+
+  /* Section Price */
+.aw-section-price {
+    background: linear-gradient(180deg, #fcfcfc, #000000);
+}
+.aw-card {
+    position: relative;
+    text-align: center;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding:  40px 20px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    transition: .5s;
+    overflow: hidden;
+}
+
+.aw-card:hover {
+    transform: scale(1.1)
+}
+
+.col-1 .aw-card,
+.col-1 .aw-card .aw-title i {
+    background: linear-gradient(-45deg, #fcfcfc, #494949, #000000);
+}
+.col-2 .aw-card,
+.col-2 .aw-card .aw-title i {
+    background: linear-gradient(-45deg, #fcfcfc, #8f001a, #000000);
+}
+.col-3 .aw-card,
+.col-3 .aw-card .aw-title i {
+    background: linear-gradient(-45deg, #fcfcfc, #D4AF37, #000000);
+}
+.aw-card:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 40%;
+    background: rgb(255,255,255, 0.1);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5)
+}
+.aw-title i {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+}
+.aw-title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
+}
+.aw-price {
+    position: relative;
+    z-index: 2;
+}
+.aw-price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+}
+.aw-option {
+    position: relative;
+    z-index: 2;
+}
+.aw-option ul {
+    margin: 0;
+    padding: 0;
+}
+.aw-option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color:#fff;
+    font-size:16px;
+}
+.aw-card a {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    text-decoration: none;
+    background-color:rgba(255, 255, 255, 0.849);
+    color: rgba(0,0,0);
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.aw-card a:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.95);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 /* team.aw-team */
-
-#aw-team.aw-team {
+#aw-team .aw-team {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,17 +513,35 @@ span.aw-backdrop-close {
     border-color: #dca453;
 }
 
+
+span.aw-backdrop-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    font-size: 16px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
 /* Footer */
 
 footer {
     padding: 10px 0;
-    background: #444;
+    background: #000000;
+    color: #fff;
 }
 
 footer .aw-logo {
-    width: 85px;
+    width: 450px;
     height: 45px;
-    font-size: 20px;
+    font-size: 11px;
 }
 
 footer .aw-social-icons {
@@ -293,7 +561,7 @@ footer .aw-social-icons li a {
 }
 
 footer .aw-social-icons li a:hover {
-    opacity: .7;
+    opacity: .4;
 }
 
 /* Animations */
@@ -344,18 +612,23 @@ footer .aw-social-icons li a:hover {
 	.aw-team .aw-arrow.aw-arrow-left {
 	    right: 100%;
     }
+    .aw-grid-about {
+        display: flex;
+        flex-direction: column;
+    }
+    .aw-parallax {
+        min-height: 300px;
+        max-height: 350px;
+    }
 }
 
 @media all and (max-width: 680px) {
-    
     header nav {
     	position: absolute;
     }
-
     header nav.aw-nav-fixed {
     	background: none;
     }
-
     ul.aw-navigation {
     	list-style-type: none;
 	    margin: 0;
@@ -366,33 +639,27 @@ footer .aw-social-icons li a:hover {
 	    -webkit-transition: max-height .4s ease;
 	    transition: max-height .4s ease;
     }
-
     ul.aw-navigation.aw-navigation-opened {
     	max-height: 500px;
     	-webkit-transition: max-height 1s ease;
 	    transition: max-height 1s ease;
     }
-
     ul.aw-navigation li {
         padding: 0 15px;
     }
-
     ul.aw-navigation li a {
     	display: block;
 	    padding: 10px 0;
 	    color: #fff;
 	    border-bottom: solid 1px #999;
     }
-
     ul.aw-navigation li:first-child a {
     	padding-top: 20px;
     }
-
     ul.aw-navigation li:last-child a {
     	padding-bottom: 20px;
     	border-bottom: none;
     }
-
     header nav .aw-nav-toggle {
 		display: block;
 		color: #fff;
@@ -402,33 +669,60 @@ footer .aw-social-icons li a:hover {
         position: absolute;
         bottom: 25px;
     }
+    .aw-grid-subject {
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .aw-grid-subject .aw-colum {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .aw-subject-info-title {
+        font-size: 12px;
+        max-width: 400px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 8px 8px 0 0;
+    }
+    #aw-subject input[type="button"] {
+        width: 100%;
+    }
+    .aw-card {
+        margin: 20px;
+    }
+    .aw-section-price {
+        padding: 15px;
+    }
+    .aw-card:hover {
+        transform: none;
+    }
 }
 
 @media all and (max-width: 600px) {
-    
     .aw-logo {
     	width: 85px;
 	    height: 50px;
 	    font-size: 25px;
     }
-
     h1, h3 {
-    	font-size: 20px;
+    	font-size: 25px;
     }
-
+    .aw-section-title{
+        height: 35px;
+        width: 90%;
+    }
     .aw-header-text .aw-arrow, 
     .aw-team .aw-arrow {
         padding: 10px;
     }
-
     #aw-about .aw-column {
 	    width: 100%;
 	}
-
 	.aw-team {
 		max-width: 80%;
 	}
-
 	.aw-team ul li > p {
 	    font-size: 17px;
     }
@@ -437,5 +731,4 @@ footer .aw-social-icons li a:hover {
         bottom: 25px;
     }
 }
-
 /* End of code by Justin Leach, 30091487 */
