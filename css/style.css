@@ -426,6 +426,7 @@ header nav .aw-nav-toggle {
     height: 35px;
     margin: 20px auto 0;
     font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
     background-color:rgba(255, 255, 255, 0.849);
     color: rgba(0,0,0);
@@ -441,93 +442,41 @@ header nav .aw-nav-toggle {
 }
 
 /* team.aw-team */
-#aw-team .aw-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.aw-team {
+.aw-card-team {
     position: relative;
-    max-width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding:  40px 20px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    transition: .5s;
+    overflow: hidden;
 }
 
-.aw-team ul {
-    display: flex;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden; /* Hide the others items li */
+.aw-card-team:hover {
+    transform: scale(1.1)
 }
 
-.aw-team ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 100%;
-    
-}
-
-.aw-team ul li .aw-user-data img {
-    border-radius: 100%;
-}
-
-.aw-team ul li .aw-user-name {
-    display: block;
-    margin: 15px 0;
-}
-
-/* Direct child of this parent of p */
-.aw-team ul li > p {
-    font-style: italic;
-    font-size: 20px;
-    color: #ccc;
+.aw-title-team{
+    color: #000;
     text-align: center;
 }
-
-.aw-team .aw-arrow {
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    padding: 20px;
-    border: solid #000;
-    border-width: 0 3px 3px 0;
-    cursor: pointer;
-    -webkit-transition: opacity .3s ease;
-    transition: opacity .3s ease;
+.aw-title-team img {
+    border-radius: 50%;
+}
+.aw-title-team h5 {
+    margin: 8px;
 }
 
-.aw-team .aw-arrow.aw-arrow-left {
-    right: 120%;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
-.aw-team .aw-arrow.aw-arrow-right {
-    left: 120%;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.aw-team .aw-arrow:hover {
-    border-color: #dca453;
-}
-
-
-span.aw-backdrop-close {
-    position: absolute;
+.aw-option-team ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 20px;
-    right: 20px;
-    height: 30px;
-    width: 30px;
-    color: #fff;
-    font-size: 16px;
-    border: solid 1px #fff;
-    border-radius: 100%;
-    cursor: pointer;
+    list-style-type: none;
+}
+.aw-option-team ul li {
+    /*deplace vers la droite */
+}
+.aw-option-team ul li a i {
+    font-size: 25px;
 }
 
 /* Footer */
