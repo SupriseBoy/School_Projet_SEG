@@ -669,10 +669,6 @@ footer .aw-social-icons li a:hover {
         position: absolute;
         bottom: 25px;
     }
-    .aw-grid-subject {
-        max-width: 400px;
-        max-height: 300px;
-    }
     .aw-grid-subject .aw-colum {
         display: flex;
         flex-direction: column;
@@ -681,20 +677,14 @@ footer .aw-social-icons li a:hover {
     }
     .aw-subject-info-title {
         font-size: 12px;
-        max-width: 400px;
-        color: #fff;
-        background-color: #000;
-        border-radius: 8px 8px 0 0;
     }
     #aw-subject input[type="button"] {
         width: 100%;
     }
     .aw-card {
-        margin: 20px;
+        margin: 15px;
     }
-    .aw-section-price {
-        padding: 15px;
-    }
+     
     .aw-card:hover {
         transform: none;
     }
