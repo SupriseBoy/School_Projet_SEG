@@ -702,16 +702,18 @@ footer .aw-social-icons li a:hover {
 
 @media all and (max-width: 600px) {
     .aw-logo {
-    	width: 85px;
+    	width: 120px;
 	    height: 50px;
 	    font-size: 25px;
     }
+    .aw-header-content{
+        height: 300px;
+    }
+    .aw-header-content .aw-main-banner {
+        height: 300px;
+    }
     h1, h3 {
     	font-size: 25px;
-    }
-    .aw-section-title{
-        height: 35px;
-        width: 90%;
     }
     .aw-header-text .aw-arrow, 
     .aw-team .aw-arrow {
