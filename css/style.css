@@ -232,6 +232,7 @@ header nav .aw-nav-toggle {
     overflow: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    padding: 15px
 }
 
 .aw-grid-subject .aw-colum {
