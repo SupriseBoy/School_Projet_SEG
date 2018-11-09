@@ -212,7 +212,7 @@ header nav .aw-nav-toggle {
 
 /* Subject us */
 .aw-subject {
-    /* background: linear-gradient(180deg, #000, #fff); */
+    background: linear-gradient(180deg, #000, #fff); 
 }
 
 .aw-grid-subject {
@@ -324,8 +324,8 @@ header nav .aw-nav-toggle {
   .aw-button.aw-box-icon i {
     background-color: #000;
     color: #fff;
-    padding: 9px 45px;
-    border-radius: 4px;
+    padding: 9.65px 45px;
+    border-radius: 0 8px 8px 0;
   }
   
   .aw-button.aw-box-icon input:focus + i {
@@ -670,6 +670,9 @@ footer .aw-social-icons li a:hover {
         position: absolute;
         bottom: 25px;
     }
+    .aw-button.aw-box-icon i{
+        padding: 10 px 25px;
+    }
     .aw-grid-subject .aw-colum {
         display: flex;
         flex-direction: column;
@@ -678,6 +681,7 @@ footer .aw-social-icons li a:hover {
     }
     .aw-subject-info-title {
         font-size: 12px;
+        border-radius: 8px 8px 0 0;
     }
     #aw-subject input[type="button"] {
         width: 100%;
