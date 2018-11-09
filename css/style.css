@@ -232,14 +232,13 @@ header nav .aw-nav-toggle {
     overflow: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    padding: 15px
+    padding: 15px;
 }
 
 .aw-grid-subject .aw-colum {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
-    border: solid 1px rgb(173, 173, 173);
     border-radius: 12px;
     background-color: #fff;
 }
@@ -671,7 +670,7 @@ footer .aw-social-icons li a:hover {
         bottom: 25px;
     }
     .aw-button.aw-box-icon i{
-        padding: 10 px 25px;
+        padding: 10px 25px;
     }
     .aw-grid-subject .aw-colum {
         display: flex;
