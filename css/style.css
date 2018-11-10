@@ -49,7 +49,6 @@ p {
 header {
     position: relative;
 }
-
 header nav {
     position: fixed;
     width: 100%;
@@ -59,19 +58,16 @@ header nav {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 header nav.aw-nav-fixed {
     margin: 0;
     background: rgba(0, 0, 0, .5);
 }
-
 header nav ul.aw-navigation{
     margin: 0;
     padding: 0;
     display: flex;
     list-style-type: none;
 }
-
 header nav ul.aw-navigation li a {
     display: block;
     color: #fff;
@@ -79,11 +75,9 @@ header nav ul.aw-navigation li a {
     text-transform: uppercase;
     padding: 0 16px;
 }
-
 header nav ul.aw-navigation li:last-child a {
     padding-right: 0;
 }
-
 header nav ul.aw-navigation li::after {
     content: '';
     display: block;
@@ -93,16 +87,13 @@ header nav ul.aw-navigation li::after {
     -webkit-transition: all .80s ease;
     transition: all .80s ease;
 }
-
 header nav ul.aw-navigation li:hover::after {
     width: 100%;
     opacity: 1;
 }
-
 header nav .aw-nav-toggle {
     display: none;
 }
-
 .aw-header-text {
     display: flex;
     flex-direction: column;
@@ -159,7 +150,6 @@ header nav .aw-nav-toggle {
     height: 100%;
     padding: 35px 0;
 }
-
 .aw-container {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +159,6 @@ header nav .aw-nav-toggle {
     justify-content: space-evenly;
     box-sizing: border-box;
 }
-
 .aw-align-center {
     align-items: center;
 }
@@ -183,7 +172,6 @@ header nav .aw-nav-toggle {
     max-width: 1250px;
     margin: auto;
 }
-
 .aw-section-title {
     margin: 25px;
     font-size: 18px;
@@ -192,7 +180,6 @@ header nav .aw-nav-toggle {
     background: #2f2f2f;
     border-left: 7px solid #8f001a;
 }
-
 #aw-about .aw-grid-about .aw-box {
     margin: 15px;
     text-align: center;
@@ -206,7 +193,6 @@ header nav .aw-nav-toggle {
     font-size: 80px;
     color: #2f2f2f;
 }
-
 .aw-parallax {
     background-image: url("../img/parrallax.jpg");
     background-attachment: fixed;
@@ -221,7 +207,6 @@ header nav .aw-nav-toggle {
 .aw-subject {
     background: linear-gradient(180deg, #000, #fff); 
 }
-
 .aw-grid-subject {
     display: flex;
     flex-direction: column;
@@ -241,7 +226,6 @@ header nav .aw-nav-toggle {
     -webkit-overflow-scrolling: touch;
     padding: 15px;
 }
-
 .aw-grid-subject .aw-colum {
     display: flex;
     flex-direction: row;
@@ -249,7 +233,6 @@ header nav .aw-nav-toggle {
     border-radius: 12px;
     background-color: #fff;
 }
-
 .aw-subject-info-title {
     padding: 15px;
     font-size: 18px;
@@ -258,18 +241,15 @@ header nav .aw-nav-toggle {
     background-color: #000;
     border-radius: 8px 0 0 8px;
 }
-
 .aw-subject-info {
     padding: 5px;
 }
 #search_empty {
     text-align: center;
 }
-
 .aw-btn-info {
     text-align: right;
 }
-
 #aw-subject input[type="button"] {
     border: none;
     width: 200px;
@@ -285,18 +265,14 @@ header nav .aw-nav-toggle {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
 #aw-subject input[type="button"]:hover {
     color: #fff;
     background-color: rgb(0, 0, 0, .35);
     box-shadow: inset 0 -3.7px 0 0 #b61230;
 }
-
-/* button search */
 .aw-button {
     position: relative;
   }
-
 .aw-button input{
     width: 100%;
     border: 2px solid rgb(41, 40, 40);
@@ -306,40 +282,35 @@ header nav .aw-nav-toggle {
     padding: 8px;
     box-sizing: border-box;
     transition: 0.8s;
-  }
-  
-  .aw-button input:focus {
+}
+.aw-button input:focus {
     border-color: rgb(0, 0, 0);
     box-shadow: 0 0 45px 0 rgb(255, 255, 255);
-  }
-  
-  .aw-button input {
+}
+.aw-button input {
     padding-left: 40px;
     font-family: 'Quicksand', sans-serif;
-  }
-  
-  .aw-button i {
+}
+.aw-button i {
     position: absolute;
     right: 0;
     top: 8px;
     padding: 10px 10px;
     color: rgb(0, 0, 0);
     transition: 0.3s;
-  }
-  
-  .aw-button.aw-box-icon i {
+}
+.aw-button.aw-box-icon i {
     background-color: #000;
     color: #fff;
     padding: 9.65px 45px;
     border-radius: 0 8px 8px 0;
-  }
-  
-  .aw-button.aw-box-icon input:focus + i {
+}
+.aw-button.aw-box-icon input:focus + i {
     color: #fff;
     background-color: rgb(0, 0, 0);
-  }
+}
 
-  /* Section Price */
+/* Section Price */
 .aw-section-price {
     background: linear-gradient(180deg, #fcfcfc, #000000);
 }
@@ -359,7 +330,6 @@ header nav .aw-nav-toggle {
 .aw-card:hover {
     transform: scale(1.1)
 }
-
 .col-1 .aw-card,
 .col-1 .aw-card .aw-title i {
     background: linear-gradient(-45deg, #fcfcfc, #494949, #000000);
@@ -459,11 +429,9 @@ header nav .aw-nav-toggle {
     transition: .5s;
     overflow: hidden;
 }
-
 .aw-card-team:hover {
     transform: scale(1.1)
 }
-
 .aw-title-team{
     color: #000;
     text-align: center;
@@ -474,7 +442,6 @@ header nav .aw-nav-toggle {
 .aw-title-team h5 {
     margin: 8px;
 }
-
 .aw-option-team ul {
     display: table;
     width: 100%;
@@ -504,35 +471,29 @@ header nav .aw-nav-toggle {
 }
 
 /* Footer */
-
 footer {
     padding: 10px 0;
     background: #000000;
     color: #fff;
 }
-
 footer .aw-logo {
     width: 450px;
     height: 45px;
     font-size: 11px;
 }
-
 footer .aw-social-icons {
     display: flex;
     list-style-type: none;
 }
-
 footer .aw-social-icons li {
     margin-left: 15px;
 }
-
 footer .aw-social-icons li a {
     color: #fff;
     display: flex;
     -webkit-transition: opacity .35s ease;
     transition: opacity .35s ease;
 }
-
 footer .aw-social-icons li a:hover {
     opacity: .4;
 }
@@ -550,10 +511,6 @@ footer .aw-social-icons li a:hover {
 	
 	h1, .txt-type {
 		font-size: 55px;
-	}
-
-    .aw-header-text {
-	    padding: 15px;
 	}
     .aw-grid-about {
         display: flex;
