@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?3dshtc');
-  src:  url('../fonts/icomoon.eot?3dshtc#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?3dshtc') format('truetype'),
-    url('../fonts/icomoon.woff?3dshtc') format('woff'),
-    url('../fonts/icomoon.svg?3dshtc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?aihcz0');
+  src:  url('../fonts/icomoon.eot?aihcz0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aihcz0') format('truetype'),
+    url('../fonts/icomoon.woff?aihcz0') format('woff'),
+    url('../fonts/icomoon.svg?aihcz0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-play:before {
-  content: "\e912";
+.icon-home3:before {
+  content: "\e902";
 }
 .icon-book:before {
   content: "\e91f";
@@ -33,17 +33,32 @@
 .icon-library:before {
   content: "\e921";
 }
+.icon-file-text:before {
+  content: "\e922";
+}
 .icon-profile:before {
   content: "\e923";
 }
 .icon-coin-dollar:before {
   content: "\e93b";
 }
-.icon-quotes-left:before {
-  content: "\e977";
+.icon-display:before {
+  content: "\e956";
 }
-.icon-quotes-right:before {
-  content: "\e978";
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-search:before {
+  content: "\e986";
 }
 .icon-pie-chart:before {
   content: "\e99a";
@@ -69,6 +84,12 @@
 .icon-fire:before {
   content: "\e9a9";
 }
+.icon-shield:before {
+  content: "\e9b4";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
 .icon-menu:before {
   content: "\e9bd";
 }
@@ -81,8 +102,23 @@
 .icon-star-full:before {
   content: "\e9d9";
 }
-.icon-google-plus2:before {
-  content: "\ea8c";
+.icon-info:before {
+  content: "\ea0c";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-google2:before {
+  content: "\ea89";
 }
 .icon-facebook:before {
   content: "\ea90";

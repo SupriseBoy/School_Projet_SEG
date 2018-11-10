@@ -15,10 +15,17 @@ p {
     font-weight: bold;
 }
 
-h1 {
-     color: #fff;
-     font-size: 70px;
-     font-weight: lighter;
+h1{
+    margin: 5px;
+    color: #000;
+    font-size: 120px;
+    font-weight: lighter;
+}
+.txt-type {
+    margin: 5px;
+    color: #fff;
+    font-size: 120px;
+    font-weight: lighter;
 }
 
 h3 {
@@ -441,12 +448,12 @@ header nav .aw-nav-toggle {
     text-decoration: none;
 }
 
-/* team.aw-team */
+/* Section Team */
 .aw-card-team {
     position: relative;
     text-align: center;
     border-radius: 15px;
-    margin: 0 auto;
+    margin: 0;
     padding:  40px 20px;
     box-shadow: 0 10px 15px rgb(0, 0, 0);
     transition: .5s;
@@ -469,14 +476,31 @@ header nav .aw-nav-toggle {
 }
 
 .aw-option-team ul {
-    display: flex;
-    list-style-type: none;
+    display: table;
+    width: 100%;
+    list-style: none;
+    margin: 10px auto;
+    padding: 0;
 }
 .aw-option-team ul li {
-    /*deplace vers la droite */
+    display: table-cell;
+    text-align: center;
+}
+.aw-option-team ul li:first-child {
+    text-align: left;
+}
+.aw-option-team ul li:last-child {
+    text-align: right;
+}
+.aw-option-team ul li a {
+    display: block;
 }
 .aw-option-team ul li a i {
     font-size: 25px;
+}
+.aw-option-team ul li a i:hover {
+    background-color: rgb(0, 0, 0, .35);
+    cursor: pointer;
 }
 
 /* Footer */
@@ -513,28 +537,7 @@ footer .aw-social-icons li a:hover {
     opacity: .4;
 }
 
-/* Animations */
-.aw-pulsate {
-    -webkit-animation: pulsate 3s ease-in-out;
-    -webkit-animation-iteration-count: infinite; /* Repeat all the time */
-    opacity: 0.35;
-}
-
-@-webkit-keyframes pulsate {
-    0%{
-        opacity: .8;
-    }
-    50%{
-        opacity: .1;
-    }
-    100%{
-        opacity: .8;
-    }
-}
-
-
 /* Responsive */
-
 @media all and (max-width: 1020px) {
 
     .aw-container {
@@ -545,22 +548,13 @@ footer .aw-social-icons li a:hover {
 
 @media all and (max-width: 820px) {
 	
-	h1 {
+	h1, .txt-type {
 		font-size: 55px;
 	}
 
-    .aw-header-text .aw-arrow,
-	.aw-team .aw-arrow {
+    .aw-header-text {
 	    padding: 15px;
 	}
-
-	.aw-team .aw-arrow.aw-arrow-right {
-	    left: 100%;
-	}
-
-	.aw-team .aw-arrow.aw-arrow-left {
-	    right: 100%;
-    }
     .aw-grid-about {
         display: flex;
         flex-direction: column;
@@ -634,12 +628,8 @@ footer .aw-social-icons li a:hover {
     #aw-subject input[type="button"] {
         width: 100%;
     }
-    .aw-card {
+    .aw-card, .aw-card-team {
         margin: 15px;
-    }
-     
-    .aw-card:hover {
-        transform: none;
     }
 }
 
@@ -655,7 +645,7 @@ footer .aw-social-icons li a:hover {
     .aw-header-content .aw-main-banner {
         height: 300px;
     }
-    h1, h3 {
+    h1, h3, .txt-type {
     	font-size: 25px;
     }
     .aw-header-text .aw-arrow, 
